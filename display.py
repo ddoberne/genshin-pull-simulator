@@ -65,8 +65,13 @@ if st.sidebar.button('Run simulation!'):
     if results['5*'] >= threshold:
       successes += 1
                                     
-  st.write(f'Expected number of on-banner 5*s: {totals["5*"] * 1.0/iterations:.2f}')
-  st.write(f'Expected number of off-banner 5*s: {totals[5] * 1.0/iterations:.2f}')
-  st.write(f'Expected number of 4*s: {totals[4] * 1.0/iterations:.2f}')
-  st.write(f'Expected number of 3*s: {totals[0] * 1.0/iterations:.2f}')
-  st.write(f'Chance of pulling at least {threshold} banner 5*s: {successes * 1.0/iterations:.3f}')
+  st.write(f'Expected number of on-banner 5*s:')
+  st.write(f'**{totals["5*"] * 1.0/iterations:.2f}**')
+  st.write(f'Expected number of off-banner 5*s:')
+  st.write(f'**{totals[5] * 1.0/iterations:.2f}**')
+  st.write(f'Expected number of 4*s:')
+  st.write(f'**{totals[4] * 1.0/iterations:.2f}**')
+  st.write(f'Expected number of 3*s:')
+  st.write(f'**{totals[0] * 1.0/iterations:.2f}**')
+  st.write(f'Chance of pulling at least {threshold} banner 5*s:')
+  st.write(f'**{successes * 1.0/iterations:.3f}**')
