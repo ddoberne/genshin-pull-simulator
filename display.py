@@ -58,6 +58,6 @@ if st.sidebar.button('Run simulation!'):
     totals[5] += results[5]
     totals['5*'] += results['5*']
   st.write(f'Expected number of on-banner 5*s: {totals["5*"] * 1.0/iterations:.2f}')
-  st.write(f'Expected number of off-banner 5*s: {totals[5] * 1.0/iterations.2f}')
-  st.write(f'Expected number of 4*s: {totals[4] * 1.0/iterations.2f}')
-  st.write(f'Expected number of 3*s: {totals[0] * 1.0/iterations.2f}')
+  st.write(f'Expected number of off-banner 5*s: {totals[5] * 1.0/iterations:.2f}')
+  st.write(f'Expected number of 4*s: {totals[4] * 1.0/iterations:.2f}')
+  st.write(f'Expected number of 3*s: {totals[0] * 1.0/iterations:.2f}')
