@@ -20,7 +20,7 @@ pulls = st.sidebar.number_input('Number of pulls to simulate:', min_value = 0, m
 saved_pity_5 = st.sidebar.number_input('Existing 5* pity:', min_value = 0, max_value = 89, value = 0)
 saved_pity_4 = st.sidebar.number_input('Existing 4* pity:', min_value = 0, max_value = 10, value = 0)
 guaranteed = st.sidebar.selectbox('50/50 guarantee:', [False, True])
-threshold = st.sidebar.number_input('Number of banner 5*s you want:', min_value = 0, max_value = max(1, pulls), value = 1)
+threshold = st.sidebar.number_input('Number of banner 5*s you want:', min_value = 0, max_value = 10000, value = 1)
 successes = 0
                                     
 if st.sidebar.button('Run simulation!'):
