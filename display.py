@@ -1,5 +1,8 @@
 import random
 import streamlit as st
+rate4 = .052
+rate5 = .006
+rate5pity = 0.0645
 
 def pull(pity4, pity5):
   if pity5 == 89: return 5
