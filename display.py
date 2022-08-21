@@ -19,7 +19,7 @@ def pull(pity4, pity5):
 pulls = st.sidebar.number_input('Number of pulls to simulate:', min_value = 0, max_value = 10000)
 saved_pity_5 = st.sidebar.number_input('Existing 5* pity:', min_value = 0, max_value = 89, value = 0)
 saved_pity_4 = st.sidebar.number_input('Existing 4* pity:', min_value = 0, max_value = 10, value = 0)
-guaranteed = st.sidebar.selectbox('50/50 guarantee:', [True, False])
+guaranteed = st.sidebar.selectbox('50/50 guarantee:', [False, True])
 
 if st.sidebar.button('Run simulation!'):
 
@@ -59,5 +59,5 @@ if st.sidebar.button('Run simulation!'):
     totals['5*'] += results['5*']
   st.write(f'Expected number of on-banner 5*s: {totals["5*"] * 1.0/iterations}')
   st.write(f'Expected number of off-banner 5*s: {totals[5] * 1.0/iterations}')
-  st.write(f'Expected number of 4*s: {totals[3] * 1.0/iterations}')
+  st.write(f'Expected number of 4*s: {totals[4] * 1.0/iterations}')
   st.write(f'Expected number of 3*s: {totals[0] * 1.0/iterations}')
