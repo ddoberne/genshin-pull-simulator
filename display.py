@@ -17,7 +17,7 @@ def pull(pity4, pity5):
   return 0
 
 st.title('✨Genshin Wish Simulator✨')
-st.markdown('![Banner](https://webstatic.hoyoverse.com/upload/contentweb/2022/07/27/ed728fe4ed6b1b618289320855c8e3d5_3104538790741606376.jpg)')
+st.image('https://webstatic.hoyoverse.com/upload/contentweb/2022/07/27/ed728fe4ed6b1b618289320855c8e3d5_3104538790741606376.jpg')
 
 pulls = st.sidebar.number_input('Number of pulls to simulate:', min_value = 0, max_value = 10000)
 saved_pity_5 = st.sidebar.number_input('Existing 5* pity:', min_value = 0, max_value = 89, value = 0)
