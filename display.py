@@ -2,13 +2,13 @@ import random
 import streamlit as st
 rate4 = .052
 rate5 = .006
-rate5pity = 0.0645
 
 def pull(pity4, pity5):
   if pity5 == 89: return 5
   if pity4 == 9: return 4
   r = random.uniform(0,1)
   if pity5 > 73:
+    rate5pity = 0.06 * (pity5 - 73) + rate5
     if r < rate5pity: return 5
     if r < rate5pity + rate4: return 4
     return 0
