@@ -8,7 +8,7 @@ def pull(pity4, pity5):
   if pity5 == 89: return 5
   if pity4 == 9: return 4
   r = random.uniform(0,1)
-  if pity5 > 74:
+  if pity5 > 73:
     if r < rate5pity: return 5
     if r < rate5pity + rate4: return 4
     return 0
